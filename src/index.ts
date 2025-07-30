@@ -113,7 +113,7 @@ export default {
     // 为了让 DO 内部的 fetch 方法能区分 GET/POST，我们可以传递原始请求的 method
     const response = await stub.fetch(new Request(url.toString(), { method: request.method }));
 
-    // 返回 Durable Object 的响应，并确保包含 CORS 头部
+    // 返回 Durable Object 的响应，并添加 CORS 头部
     return new Response(response.body, {
       status: response.status,
       headers: { ...Object.fromEntries(response.headers.entries()), ...headers },
