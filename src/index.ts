@@ -1,4 +1,3 @@
-import { DurableObject } from "cloudflare:workers";
 import { ViewCounterDurableObject } from "./ViewCounterDO";
 
 // 导出 ViewCounterDurableObject 供 wrangler 使用
