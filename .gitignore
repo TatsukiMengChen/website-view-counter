@@ -1,5 +1,6 @@
-# Logs
+# 因为是中文项目，请下面的注释用中文
 
+# 日志忽略部分
 logs
 _.log
 npm-debug.log_
